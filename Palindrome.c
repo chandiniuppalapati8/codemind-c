@@ -1,19 +1,24 @@
-#include<stdio.h>
-int main()
+#include <stdio.h>
+int main() 
 {
-    int n,r,q,c=0;
-    scanf("%d",&n);
-    q=n;
-    while(n!=0)
+  int n, reversed = 0,rem, original;
+    scanf("%d", &n);
+    original = n;
+    while (n != 0) 
     {
-        r=n%10;
-        c=c*10+r;
-        n=n/10;
+        rem = n % 10;
+        reversed = reversed * 10 + rem;
+        n /= 10;
     }
-    if(q==c)
+    if (original == reversed)
     {
         printf("True");
     }
     else
-    printf("False");
+    {
+        printf("False");
+    }
 }
+
+
+   
