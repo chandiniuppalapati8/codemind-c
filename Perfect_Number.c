@@ -1,22 +1,23 @@
-#include <stdio.h>
- 
-int main()
-{
-    int number, rem, sum = 0, i;
- 
-    
-    scanf("%d", &number);
-    for (i = 1; i <= (number - 1); i++)
-    {
-        rem = number % i;
-	if (rem == 0)
-        {
-            sum = sum + i;
-        }
-    }
-    if (sum == number)
-        printf("True");
-    else
-        printf("False");
-    return 0;
-}
+#include<stdio.h>  
+int  main()  
+{  
+// declare and initialize the variables  
+int num, rem, sum = 0, i;  
+// take an input from the user.  
+  
+scanf("%d", &num);      
+// find all divisors and add them  
+for(i = 1; i < num; i++)  
+                     {  
+                              rem = num % i;  
+                             if (rem == 0)  
+                                        {  
+                                               sum = sum + i;  
+                                         }  
+                        }  
+if (sum == num)  
+                      printf("True");  
+           else  
+                      printf("False");  
+
+}  
